@@ -83,7 +83,7 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
         } else {
             //検索文字列を含むデータを検索結果配列に追加する。
             for data in dataList {
-                if data.containsString(testSearchBar.text!) {
+                if data.containsString(searchText) {
                     searchResult.append(data)
                 }
             }
