@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kcf-RU-8gD">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kcf-RU-8gD">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -35,22 +35,21 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="gJK-Ae-c6K"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUg-Kr-L8f">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="kcf-RU-8gD" secondAttribute="bottom" id="6c6-Lu-Hfa"/>
-                            <constraint firstItem="kcf-RU-8gD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="6pf-Fi-kp6"/>
-                            <constraint firstItem="kcf-RU-8gD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QzH-xq-bF0"/>
-                            <constraint firstAttribute="trailing" secondItem="kcf-RU-8gD" secondAttribute="trailing" id="xa6-Cr-V3T"/>
-                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="testSearchBar" destination="tUg-Kr-L8f" id="yom-yt-aqQ"/>
                         <outlet property="testTableView" destination="kcf-RU-8gD" id="7iD-EX-ABG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="181.33333333333334" y="406.59333333333331"/>
+            <point key="canvasLocation" x="181" y="406"/>
         </scene>
     </scenes>
 </document>
